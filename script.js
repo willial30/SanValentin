@@ -1,6 +1,6 @@
 // Función para mostrar un mensaje de amor cuando presionan "Sí"
 function showLove() {
-    alert("¡Sabía que dirías que sí! 💖🥰 ¡Te amo!");
+    alert("Era obvio que dirias que si jejeje, gracias mi reina hermosa, se que vendran mas momentos inolvidables😘😘🐼❤️❤️");
 }
 
 // Hace que el botón "No" se mueva
