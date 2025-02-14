@@ -8,17 +8,24 @@
 </head>
 <body class="bg-image">
 
-    <audio id="music" autoplay muted>
+    <audio id="music" autoplay>
         <source src="audio/bubu.mp3" type="audio/mp3">
         Tu navegador no soporta audio.
     </audio>
 
     <script>
-        window.onload = function () {
+        document.addEventListener("DOMContentLoaded", function () {
             let music = document.getElementById("music");
-            music.muted = false;
-        };
+    
+            function playMusic() {
+                music.play().catch(error => console.log("Chrome bloqueó el audio. Se necesita interacción."));
+                document.removeEventListener("click", playMusic);
+            }
+    
+            document.addEventListener("click", playMusic);
+        });
     </script>
+
 
     <div class="content">
         <h1>Feliz San Valentín, mi 🐼🐼💕❤️</h1>
